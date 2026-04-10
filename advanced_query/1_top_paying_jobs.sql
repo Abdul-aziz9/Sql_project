@@ -1,3 +1,4 @@
+-- What are the top 10 highest-paying remote Data Analyst jobs, including company name and job details?
 SELECT  
     job_id,
     company_dim.name AS company_name,

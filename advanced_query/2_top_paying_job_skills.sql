@@ -1,4 +1,4 @@
-
+-- What skills are required for the top-paying remote Data Analyst jobs?
 WITH top_paying_jobs AS(
     SELECT  
         job_id,
@@ -24,3 +24,4 @@ FROM top_paying_jobs
     INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
+LIMIT 10
